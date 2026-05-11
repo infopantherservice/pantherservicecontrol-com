@@ -78,10 +78,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "description", content: "Panther Service: empresa de control, seguridad auxiliar y servicios profesionales. Atención personalizada 24/7." },
       { name: "author", content: "Panther Service" },
       { property: "og:title", content: "Panther Service · Control y Servicios" },
-      { property: "og:description", content: "Control de accesos, seguridad en eventos, servicios auxiliares y consultoría. Profesionalidad, confianza y respuesta rápida." },
+      { property: "og:description", content: "Panther Service: empresa de control, seguridad auxiliar y servicios profesionales. Atención personalizada 24/7." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@PantherService" },
+      { name: "twitter:title", content: "Panther Service · Control y Servicios" },
+      { name: "twitter:description", content: "Panther Service: empresa de control, seguridad auxiliar y servicios profesionales. Atención personalizada 24/7." },
+      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/f40e55d9-892f-4dad-961e-c5a01967f7b7" },
+      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/f40e55d9-892f-4dad-961e-c5a01967f7b7" },
     ],
     links: [
       {
