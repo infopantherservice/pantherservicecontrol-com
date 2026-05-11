@@ -7,12 +7,6 @@ import trustHandshake from "@/assets/trust-handshake.jpg";
 
 export const Route = createFileRoute("/servicios")({
   component: Servicios,
-  head: () => ({
-    meta: [
-      { title: "Servicios · Panther Service" },
-      { name: "description", content: "Servicios auxiliares, control de accesos, seguridad en eventos y consultoría profesional." },
-    ],
-  }),
 });
 
 const services = [

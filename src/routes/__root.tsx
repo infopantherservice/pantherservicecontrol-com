@@ -4,11 +4,8 @@ import {
   Link,
   createRootRouteWithContext,
   useRouter,
-  HeadContent,
-  Scripts,
 } from "@tanstack/react-router";
 
-import appCss from "../styles.css?url";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 
@@ -70,49 +67,10 @@ function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
 }
 
 export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()({
-  head: () => ({
-    meta: [
-      { charSet: "utf-8" },
-      { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Panther Service · Control y Servicios" },
-      { name: "description", content: "Panther Service: empresa de control, seguridad auxiliar y servicios profesionales. Atención personalizada 24/7." },
-      { name: "author", content: "Panther Service" },
-      { property: "og:title", content: "Panther Service · Control y Servicios" },
-      { property: "og:description", content: "Panther Service: empresa de control, seguridad auxiliar y servicios profesionales. Atención personalizada 24/7." },
-      { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary" },
-      { name: "twitter:site", content: "@PantherService" },
-      { name: "twitter:title", content: "Panther Service · Control y Servicios" },
-      { name: "twitter:description", content: "Panther Service: empresa de control, seguridad auxiliar y servicios profesionales. Atención personalizada 24/7." },
-      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/f40e55d9-892f-4dad-961e-c5a01967f7b7" },
-      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/f40e55d9-892f-4dad-961e-c5a01967f7b7" },
-    ],
-    links: [
-      {
-        rel: "stylesheet",
-        href: appCss,
-      },
-    ],
-  }),
-  shellComponent: RootShell,
   component: RootComponent,
   notFoundComponent: NotFoundComponent,
   errorComponent: ErrorComponent,
 });
-
-function RootShell({ children }: { children: React.ReactNode }) {
-  return (
-    <html lang="en">
-      <head>
-        <HeadContent />
-      </head>
-      <body>
-        {children}
-        <Scripts />
-      </body>
-    </html>
-  );
-}
 
 function RootComponent() {
   const { queryClient } = Route.useRouteContext();

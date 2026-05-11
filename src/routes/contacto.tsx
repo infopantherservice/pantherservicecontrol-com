@@ -3,12 +3,6 @@ import { Phone, Mail, Clock, Instagram, Facebook, User } from "lucide-react";
 
 export const Route = createFileRoute("/contacto")({
   component: Contacto,
-  head: () => ({
-    meta: [
-      { title: "Contacto · Panther Service" },
-      { name: "description", content: "Contacta con Panther Service. Atención 24/7 · 647 650 027 · infopanther.service@gmail.com" },
-    ],
-  }),
 });
 
 function Contacto() {

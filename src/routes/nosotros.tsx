@@ -4,12 +4,6 @@ import { CheckCircle2 } from "lucide-react";
 
 export const Route = createFileRoute("/nosotros")({
   component: Nosotros,
-  head: () => ({
-    meta: [
-      { title: "Nosotros · Panther Service" },
-      { name: "description", content: "Conoce Panther Service: visión, valores y compromiso con la excelencia." },
-    ],
-  }),
 });
 
 function Nosotros() {
