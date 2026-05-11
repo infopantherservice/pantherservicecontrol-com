@@ -32,8 +32,8 @@ export function SiteFooter() {
         <div>
           <h4 className="text-sm font-semibold uppercase tracking-wider mb-4 text-accent">Síguenos</h4>
           <div className="flex gap-3">
-            <a href="https://instagram.com/pantherservice_" className="p-2 border border-border rounded hover:border-accent hover:text-accent transition-colors" aria-label="Instagram"><Instagram className="size-5" /></a>
-            <a href="#" className="p-2 border border-border rounded hover:border-accent hover:text-accent transition-colors" aria-label="Facebook"><Facebook className="size-5" /></a>
+            <a href="https://www.instagram.com/pantherservice_?igsh=MWJxdXF6ZTAycmJ0Ng==" target="_blank" rel="noopener noreferrer" className="p-2 border border-border rounded hover:border-accent hover:text-accent transition-colors" aria-label="Instagram"><Instagram className="size-5" /></a>
+            <a href="https://www.facebook.com/share/18WugVLBA4/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" className="p-2 border border-border rounded hover:border-accent hover:text-accent transition-colors" aria-label="Facebook"><Facebook className="size-5" /></a>
           </div>
         </div>
       </div>
