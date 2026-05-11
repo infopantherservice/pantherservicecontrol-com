@@ -20,7 +20,7 @@ const services = [
     icon: Users,
     title: "Servicios Auxiliares",
     image: heroGuard,
-    items: ["Conserjes y controladores", "Recepcionistas y personal polivalente", "Soporte a la actividad diaria del cliente", "Mantenimiento, jardinería y electricidad", "Marinería (guardamuelles, marineros)"],
+    items: ["Conserjes y controladores", "Recepcionistas y personal polivalente", "Soporte a la actividad diaria del cliente", "Control de masas"],
   },
   {
     icon: Shield,
@@ -30,7 +30,7 @@ const services = [
   },
   {
     icon: Eye,
-    title: "Seguridad en Eventos",
+    title: "Control en Eventos",
     image: serviceEvents,
     items: ["Congresos y ferias", "Bodas y celebraciones", "Control de aforo", "Protección de accesos", "Zonas VIP"],
   },
