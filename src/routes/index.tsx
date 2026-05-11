@@ -63,13 +63,13 @@ function Index() {
         <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-12 items-center">
           <img src={serviceEvents} alt="Equipo Panther Service" className="w-full h-80 object-cover" />
           <div>
-            <p className="text-accent uppercase tracking-[0.3em] text-xs mb-3">Calidad y servicio</p>
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">Por encima de todo</h2>
+            <p className="text-accent uppercase tracking-[0.3em] text-xs mb-3">Excelencia profesional</p>
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">Compromiso ante todo</h2>
             <p className="text-muted-foreground mb-4">
-              Cuando el compromiso y la implicación son absolutos, el resultado se construye solo. Nuestro sistema de trabajo se basa en una entrega total y en ofrecer lo mejor en cada circunstancia.
+              Trabajamos con dedicación absoluta y atención al detalle, adaptándonos a cada situación para garantizar un servicio impecable en cualquier circunstancia.
             </p>
             <p className="text-muted-foreground">
-              Nuestra imagen, trato y experiencia nos permiten brindar la mejor atención y calidad, aportando valor real a su negocio o proyecto.
+              Profesionalidad, cercanía y experiencia se unen para aportar verdadero valor a su negocio, proyecto o evento.
             </p>
           </div>
         </div>
@@ -121,7 +121,7 @@ function Index() {
             Disponemos de toda la documentación a disposición del cliente para ofrecer claridad y transparencia en nuestros acuerdos.
           </p>
           <ul className="grid sm:grid-cols-2 gap-3 text-sm text-left max-w-2xl mx-auto mb-10">
-            {["Seguros de Responsabilidad Civil", "Convenio colectivo", "Certificado de Hacienda y Seguridad Social", "Prevención de riesgos laborales"].map((i) => (
+            {["Seguros de Responsabilidad Civil", "Convenio colectivo", "Certificado de Hacienda y Seguridad Social"].map((i) => (
               <li key={i} className="flex items-center gap-2"><CheckCircle2 className="size-4 text-accent shrink-0" /> {i}</li>
             ))}
           </ul>
