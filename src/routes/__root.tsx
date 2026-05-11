@@ -9,6 +9,8 @@ import {
 } from "@tanstack/react-router";
 
 import appCss from "../styles.css?url";
+import { SiteHeader } from "@/components/SiteHeader";
+import { SiteFooter } from "@/components/SiteFooter";
 
 function NotFoundComponent() {
   return (
@@ -72,14 +74,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "Panther Service · Control y Servicios" },
+      { name: "description", content: "Panther Service: empresa de control, seguridad auxiliar y servicios profesionales. Atención personalizada 24/7." },
+      { name: "author", content: "Panther Service" },
+      { property: "og:title", content: "Panther Service · Control y Servicios" },
+      { property: "og:description", content: "Control de accesos, seguridad en eventos, servicios auxiliares y consultoría. Profesionalidad, confianza y respuesta rápida." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
-      { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:site", content: "@PantherService" },
     ],
     links: [
       {
@@ -113,7 +115,13 @@ function RootComponent() {
 
   return (
     <QueryClientProvider client={queryClient}>
-      <Outlet />
+      <div className="min-h-screen flex flex-col bg-background text-foreground">
+        <SiteHeader />
+        <main className="flex-1 pt-20">
+          <Outlet />
+        </main>
+        <SiteFooter />
+      </div>
     </QueryClientProvider>
   );
 }
