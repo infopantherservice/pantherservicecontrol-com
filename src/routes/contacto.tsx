@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { Phone, Mail, Clock, Instagram, User } from "lucide-react";
+import { Phone, Mail, Clock, Instagram, Facebook, User } from "lucide-react";
 
 export const Route = createFileRoute("/contacto")({
   component: Contacto,
@@ -26,7 +26,8 @@ function Contacto() {
           { icon: Phone, label: "Teléfono", value: "647 650 027", href: "tel:647650027" },
           { icon: Mail, label: "Email", value: "infopanther.service@gmail.com", href: "mailto:infopanther.service@gmail.com" },
           { icon: Clock, label: "Horario", value: "Atención 24/7" },
-          { icon: Instagram, label: "Instagram", value: "@pantherservice_", href: "https://instagram.com/pantherservice_" },
+          { icon: Instagram, label: "Instagram", value: "@pantherservice_", href: "https://www.instagram.com/pantherservice_?igsh=MWJxdXF6ZTAycmJ0Ng==" },
+          { icon: Facebook, label: "Facebook", value: "Panther Service", href: "https://www.facebook.com/share/18WugVLBA4/?mibextid=wwXIfr" },
         ].map((c) => {
           const Inner = (
             <div className="flex items-start gap-4 bg-card border border-border p-6 hover:border-accent transition-colors h-full">
@@ -38,7 +39,7 @@ function Contacto() {
             </div>
           );
           return c.href ? (
-            <a key={c.label} href={c.href} className="block">{Inner}</a>
+            <a key={c.label} href={c.href} target="_blank" rel="noopener noreferrer" className="block">{Inner}</a>
           ) : (
             <div key={c.label}>{Inner}</div>
           );
